@@ -2,7 +2,7 @@
 
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #000000 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $Montserrat: Montserrat, sans-serif // Montserrat Font Family
 $Teko: Teko, sans-serif // Teko Font Family
@@ -42,7 +42,8 @@ $gutter: $grid-gutter-width
 
 
 // GENERAL DOCUMENT STYLES
-
+*
+	box-sizing: border-box
 ::placeholder
 	color: #666
 
@@ -58,6 +59,7 @@ input, textarea
 		border-color: green
 
 body
+	margin: 0
 	font-family: $Montserrat
 	font-size: $fontsize
 	min-width: 320px
@@ -65,3 +67,4 @@ body
 	line-height: 1.65
 	overflow-x: hidden
 	color: $textcolor
+
