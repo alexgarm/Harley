@@ -4,7 +4,8 @@ $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$roboto: Roboto, sans-serif // Roboto Font Family
+$Montserrat: Montserrat, sans-serif // Montserrat Font Family
+$Teko: Teko, sans-serif // Teko Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px
@@ -27,10 +28,18 @@ $gutter: $grid-gutter-width
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2')
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+@include font('Montserrat', normal, 400, '../fonts/src/Montserrat/Montserrat-Regular.woff2')
+@include font('Montserrat', bold, 700, '../fonts/src/Montserrat/Montserrat-Bold.woff2')
+@include font('Montserrat', medium, 500, '../fonts/src/Montserrat/Montserrat-Medium.woff2')
+@include font('Montserrat', SemiBold, 600, '../fonts/src/Montserrat/Montserrat-SemiBold.woff2')
+@include font('Teko', normal, 400, '../fonts/src/Teko/Teko-Regular.woff2')
+@include font('Teko', medium, 500, '../fonts/src/Teko/Teko-Medium.woff2')
+@include font('Teko', SemiBold, 600, '../fonts/src/Teko/Teko-SemiBold.woff2')
+@include font('Teko', bold, 700, '../fonts/src/Teko/Teko-Bold.woff2')
+
+
+
 
 // GENERAL DOCUMENT STYLES
 
